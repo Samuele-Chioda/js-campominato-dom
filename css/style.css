@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+header{
+    padding:5rem;
+}
+
+body{
+    background-color:rgb(121, 51, 51);
+}
+
+main{
+    padding-bottom:4rem;
+}
+
+h1{
+    text-align:center;
+}
+
+div#grid{
+    display:flex;
+    flex-wrap:wrap;
+    width:1000px;
+    height:1000px;
+    margin:0 auto;
+}
+
+div#grid,
+div#grid article.square{
+    border: 2px solid black;
+}
+
+div#grid > article.square{
+    width:calc(100% / 10);
+    height:calc(100% / 10);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+}
+
+div#grid > article.square.active{
+    background-color: rgb(34, 34, 139);
+    color:white;
+}
