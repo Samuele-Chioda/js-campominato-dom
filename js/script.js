@@ -13,3 +13,17 @@ for (let index = 0; index < 100; index++) {
     gridElement.appendChild(squareElement);
 }
 
+function generateBombs(max) {
+    const bombs = [];
+    while (bombs.length < 16) {
+        const bomb = Math.floor(Math.random() * max) +1;
+        if (!bombs.includes(bomb)) {
+            bombs.push(bomb);
+        }
+    }
+    return bombs;
+}
+
+const gridSize = 100;
+const bombs = generateBombs(gridSize);
+console.log("bombs", bombs);
