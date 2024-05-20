@@ -9,7 +9,7 @@ header{
 }
 
 body{
-    background-color:rgb(121, 51, 51);
+    background-color:rgb(71, 185, 26);
 }
 
 main{
@@ -21,6 +21,7 @@ h1{
     margin-bottom:2rem;
     font-size: 2.5rem;
     text-shadow: 2px 2px 3px black;
+    color: rgb(248, 244, 16);
 }
 
 div#grid{
@@ -52,18 +53,26 @@ div#grid > article.square.active{
 
 #play-button{
     padding: 0.5rem;
-    background-color: aqua;
+    background-color: gray;
     border: 1px solid black;
     border-radius: .5rem;
     font-size:1.5rem;
 }
 
 #play-button:active{
-    background-color:aquamarine;
+    background-color:lightgray;
 }
 
 .div_button{
     padding:.5rem;
     display:flex;
     justify-content:center;
+}
+
+div#grid > article.square.bomb {
+    background-color: red;
+}
+
+div#grid > article.square.salvo {
+    background-color: rgb(38, 169, 212);
 }
